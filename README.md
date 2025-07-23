@@ -1,4 +1,4 @@
-# DevLama 🦙⚡ - AI-Powered Developer Productivity CLI
+# DevLama - AI-Powered Developer Productivity CLI
 
 ```
 ██████╗ ███████╗██╗   ██╗██╗      █████╗ ███╗   ███╗ █████╗ 
@@ -15,23 +15,23 @@ DevLama transforms your terminal into an intelligent development environment whe
 
 ---
 
-## 🎯 The Vision
+## The Vision
 
 **DevLama bridges the gap between AI and your development workflow.** Instead of switching between your editor, browser, and AI tools, DevLama brings everything into your terminal:
 
-- 🤖 **Chat with AI models** locally via OLLAMA
-- 💻 **Edit and generate code** with AI assistance  
-- 🎨 **Beautiful interactive interface** with text input boxes
-- ⚡ **Instant productivity** without leaving your terminal
-- 🛠️ **Extensible architecture** for custom workflows
+- **Chat with AI models** locally via OLLAMA
+- **Edit and generate code** with AI assistance  
+- **Beautiful interactive interface** with text input boxes
+- **Instant productivity** without leaving your terminal
+- **Extensible architecture** for custom workflows
 
 Think of it as **"Claude/ChatGPT for your terminal"** but with the power to actually modify your codebase.
 
 ---
 
-## ✨ Core Features
+## Core Features
 
-### 🤖 **AI Integration (OLLAMA-Powered)**
+### AI Integration (OLLAMA-Powered)
 - **Interactive AI Chat**: Real-time conversations with local LLMs
 - **Code Analysis**: AI-powered code review and suggestions
 - **Smart Code Generation**: Create functions, classes, APIs with natural language
@@ -45,7 +45,7 @@ Think of it as **"Claude/ChatGPT for your terminal"** but with the power to actu
 - **Multi-Language Support**: Go, Python, JavaScript, Java, C++, and more
 - **Safe Operations**: Always confirm before making changes
 
-### 🎨 **Beautiful User Experience**
+### Beautiful User Experience
 - **Colorful ASCII Art**: Professional branding and visual appeal
 - **Interactive Text Boxes**: Modern input interfaces with auto-completion
 - **Progress Indicators**: Real-time feedback for long operations
@@ -54,11 +54,11 @@ Think of it as **"Claude/ChatGPT for your terminal"** but with the power to actu
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
-- **Go 1.24.5+**: [Download Go](https://golang.org/dl/)
-- **OLLAMA**: [Download OLLAMA](https://ollama.ai) for AI features
+- Go 1.24.5+ - [Download Go](https://golang.org/dl/)
+- OLLAMA - [Download OLLAMA](https://ollama.ai) for AI features
 
 ### Installation
 
@@ -92,9 +92,9 @@ ollama pull llama2
 
 ---
 
-## 🎪 Usage Examples
+## Usage Examples
 
-### 🌟 **Interactive Mode (Recommended)**
+### Interactive Mode (Recommended)
 ```bash
 # Start the beautiful interactive interface
 ./devlama.exe interactive
@@ -108,7 +108,7 @@ ollama pull llama2
 > help
 ```
 
-### 🤖 **AI Commands**
+### AI Commands
 ```bash
 # Chat with AI models
 ./devlama.exe ollama chat llama2
@@ -137,7 +137,7 @@ ollama pull llama2
 ./devlama.exe code add "user authentication system"
 ```
 
-### 🛠️ **Utility Commands**
+### Utility Commands
 ```bash
 # Open files and URLs
 ./devlama.exe open .
@@ -153,9 +153,9 @@ ollama pull llama2
 
 ---
 
-## 🏗️ Architecture & Design
+## Architecture & Design
 
-### **Command Structure**
+### Command Structure
 ```
 devlama/
 ├── main.go              # Application entry point
@@ -172,7 +172,7 @@ devlama/
 └── README.md            # This file
 ```
 
-### **Technology Stack**
+### Technology Stack
 - **Framework**: [Cobra CLI](https://github.com/spf13/cobra) for command structure
 - **AI Integration**: [OLLAMA API](https://github.com/ollama/ollama) for local LLMs  
 - **UI Components**: [PromptUI](https://github.com/manifoldco/promptui) for interactive interfaces
@@ -180,23 +180,23 @@ devlama/
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
-### **For Individual Developers**
+### For Individual Developers
 - **Code Review**: Get AI feedback on your code quality
 - **Learning**: Ask AI to explain complex code patterns
 - **Debugging**: Let AI identify and fix bugs
 - **Documentation**: Auto-generate comments and docs
 - **Prototyping**: Quickly generate boilerplate code
 
-### **For Development Teams**
+### For Development Teams
 - **Code Standards**: Enforce consistent coding practices
 - **Onboarding**: Help new developers understand codebases
 - **Refactoring**: Safely improve legacy code
 - **API Development**: Generate REST endpoints and models
 - **Testing**: Create comprehensive test suites
 
-### **For DevOps/Infrastructure**
+### For DevOps/Infrastructure
 - **Configuration**: Generate Docker, Kubernetes configs
 - **Scripts**: Create automation and deployment scripts
 - **Monitoring**: Generate logging and alerting code
@@ -204,9 +204,9 @@ devlama/
 
 ---
 
-## 🔧 Advanced Configuration
+## Advanced Configuration
 
-### **Custom AI Models**
+### Custom AI Models
 ```bash
 # Use different models for different tasks
 ./devlama.exe ollama pull codellama:13b    # For coding
@@ -214,14 +214,14 @@ devlama/
 ./devlama.exe ollama pull deepseek-coder   # For code analysis
 ```
 
-### **Environment Variables**
+### Environment Variables
 ```bash
 export OLLAMA_HOST=http://localhost:11434  # Custom OLLAMA server
 export DEVLAMA_DEFAULT_MODEL=codellama     # Default AI model
 export DEVLAMA_VERBOSE=true                # Enable verbose logging
 ```
 
-### **Integration with IDEs**
+### Integration with IDEs
 ```bash
 # VS Code: Add as terminal task
 # Vim: Use as external command
@@ -230,20 +230,20 @@ export DEVLAMA_VERBOSE=true                # Enable verbose logging
 
 ---
 
-## 🎨 Interactive Mode Deep Dive
+## Interactive Mode Deep Dive
 
 The **interactive mode** is DevLama's crown jewel - a beautiful text-based interface that feels modern and responsive:
 
-### **Features**
+### Features
 - **Smart Auto-completion**: Tab completion for commands and files
 - **Command History**: Navigate previous commands with arrow keys
 - **Colored Output**: Syntax highlighting and emoji indicators
 - **Progress Bars**: Visual feedback for long-running operations
 - **Error Handling**: Friendly error messages with suggestions
 
-### **Available Commands in Interactive Mode**
+### Available Commands in Interactive Mode
 
-#### **🤖 AI Commands**
+#### AI Commands
 ```
 ollama chat [model]     - Start AI conversation
 ollama list            - Show available models  
@@ -251,7 +251,7 @@ ollama pull <model>    - Download new models
 ollama generate <prompt> - One-time text generation
 ```
 
-#### **💻 Code Commands**
+#### Code Commands
 ```
 code edit [file]       - Edit files with AI help
 code generate [type]   - Create new code
@@ -260,7 +260,7 @@ code analyze <file>    - Get code insights
 code add <feature>     - Add functionality
 ```
 
-#### **🛠️ Utility Commands**
+#### Utility Commands
 ```
 hello [name]          - Friendly greeting
 open <target>         - Open files/URLs
@@ -274,7 +274,7 @@ exit                  - Leave interactive mode
 
 ---
 
-## 🧪 Testing Guide
+## Testing Guide
 
 We've created a comprehensive testing guide! See **[TESTING.md](TESTING.md)** for:
 - Step-by-step testing instructions
@@ -283,7 +283,7 @@ We've created a comprehensive testing guide! See **[TESTING.md](TESTING.md)** fo
 - Troubleshooting common issues
 - Performance benchmarks
 
-### **Quick Test**
+### Quick Test
 ```bash
 # Test basic functionality
 ./devlama.exe version
@@ -298,11 +298,11 @@ We've created a comprehensive testing guide! See **[TESTING.md](TESTING.md)** fo
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Here's how to get started:
 
-### **Development Setup**
+### Development Setup
 ```bash
 # Fork and clone the repo
 git clone https://github.com/yourusername/devlama.git
@@ -319,26 +319,26 @@ go build -o devlama.exe
 # Submit a pull request
 ```
 
-### **Adding New Commands**
+### Adding New Commands
 1. Create a new file in `cmd/` directory
 2. Follow the existing command patterns
 3. Add to interactive mode in `cmd/interactive.go`
 4. Update help text and documentation
 5. Add tests and examples
 
-### **Contribution Areas**
-- 🤖 **AI Features**: New OLLAMA integrations
-- 💻 **Code Tools**: Additional programming languages
-- 🎨 **UI/UX**: Enhanced interactive experiences  
-- 📚 **Documentation**: Tutorials and guides
-- 🧪 **Testing**: Automated test suites
-- 🔧 **DevOps**: CI/CD and deployment
+### Contribution Areas
+- **AI Features**: New OLLAMA integrations
+- **Code Tools**: Additional programming languages
+- **UI/UX**: Enhanced interactive experiences  
+- **Documentation**: Tutorials and guides
+- **Testing**: Automated test suites
+- **DevOps**: CI/CD and deployment
 
 ---
 
-## 🎖️ Why DevLama?
+## Why DevLama?
 
-### **The Problem**
+### The Problem
 Modern development involves constantly switching between:
 - Code editors for writing
 - Browsers for research  
@@ -346,7 +346,7 @@ Modern development involves constantly switching between:
 - Terminals for commands
 - Documentation for references
 
-### **The Solution**
+### The Solution
 DevLama unifies these workflows into a single, intelligent command-line interface:
 - **AI-First**: Get help without leaving your terminal
 - **Code-Aware**: Understands your project structure
@@ -354,25 +354,25 @@ DevLama unifies these workflows into a single, intelligent command-line interfac
 - **Extensible**: Easy to customize and extend
 - **Local**: Your code never leaves your machine
 
-### **The Result**
-- ⚡ **10x faster** development workflow
-- 🧠 **Smarter** code with AI assistance  
-- 😊 **More enjoyable** terminal experience
-- 🛡️ **Privacy-focused** with local AI models
-- 🚀 **Infinitely extensible** for your needs
+### The Result
+- **10x faster** development workflow
+- **Smarter** code with AI assistance  
+- **More enjoyable** terminal experience
+- **Privacy-focused** with local AI models
+- **Infinitely extensible** for your needs
 
 ---
 
-## 📈 Roadmap
+## Roadmap
 
-### **Version 2.0 (Coming Soon)**
+### Version 2.0 (Coming Soon)
 - [ ] **Multi-Model Support**: GPT, Claude, and more AI providers
 - [ ] **Project Templates**: Full application scaffolding
 - [ ] **Git Integration**: AI-powered commit messages and PR reviews
 - [ ] **Plugin System**: Custom command extensions
 - [ ] **Web Dashboard**: Browser-based project management
 
-### **Version 3.0 (Future)**
+### Version 3.0 (Future)
 - [ ] **Team Collaboration**: Shared AI assistants
 - [ ] **Cloud Sync**: Cross-device configuration sync
 - [ ] **Advanced Analytics**: Development productivity insights
@@ -381,13 +381,13 @@ DevLama unifies these workflows into a single, intelligent command-line interfac
 
 ---
 
-## 📄 License
+## License
 
 MIT License - feel free to use DevLama in your projects, modify it, and distribute it.
 
 ---
 
-## 🙋‍♂️ Support & Community
+## Support & Community
 
 - **Issues**: [GitHub Issues](https://github.com/nitink23/devlama/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/nitink23/devlama/discussions)  
@@ -396,7 +396,7 @@ MIT License - feel free to use DevLama in your projects, modify it, and distribu
 
 ---
 
-## 🎉 Acknowledgments
+## Acknowledgments
 
 Built with love using:
 - [Cobra](https://github.com/spf13/cobra) - Powerful CLI framework
@@ -404,4 +404,4 @@ Built with love using:
 - [PromptUI](https://github.com/manifoldco/promptui) - Interactive CLI components
 - [Go](https://golang.org) - Fast, reliable systems programming
 
-**DevLama: Where AI meets Developer Experience** 🦙⚡ 
+**DevLama: Where AI meets Developer Experience** 
