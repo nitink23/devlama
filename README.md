@@ -1,5 +1,13 @@
 # DevLama - a CLI coding tool that BELONGS TO YOU
 
+> **⚠️ EXPERIMENTAL PROJECT - NOT READY FOR PRODUCTION USE**
+> 
+> DevLama is currently in **heavy development** and **does not work yet**. Many features are incomplete or non-functional. This is a proof-of-concept and demonstration of what the tool aims to become. 
+>
+> **Current Status**: Basic CLI structure works, but AI integration and code manipulation features are still being developed.
+>
+> **Expected Timeline**: Alpha version targeting Q2 2024
+
 ```
 ██████╗ ███████╗██╗   ██╗██╗      █████╗ ███╗   ███╗ █████╗ 
 ██╔══██╗██╔════╝██║   ██║██║     ██╔══██╗████╗ ████║██╔══██╗
@@ -11,7 +19,7 @@
 
 **A completely free, local alternative to Claude Code that works entirely on your machine**
 
-DevLama brings AI-powered coding assistance directly to your terminal—no subscriptions, no data sharing, no limits. The quality of results depends entirely on your prompting skills and the local AI models you choose. Your code never leaves your machine.
+DevLama aims to bring AI-powered coding assistance directly to your terminal—no subscriptions, no data sharing, no limits. The quality of results will depend entirely on your prompting skills and the local AI models you choose. Your code never leaves your machine.
 
 ---
 
@@ -56,13 +64,15 @@ DevLama brings AI-powered coding assistance directly to your terminal—no subsc
 
 ---
 
-## Quick Start
+## Development Status & Quick Start
+
+> **⚠️ Warning**: These installation instructions are for **development and testing only**. Most features don't work yet.
 
 ### Prerequisites
 - Go 1.24.5+ - [Download Go](https://golang.org/dl/)
-- OLLAMA - [Download OLLAMA](https://ollama.ai) - This replaces Claude Code's cloud dependency
+- OLLAMA - [Download OLLAMA](https://ollama.ai) - This will replace Claude Code's cloud dependency
 
-### Installation
+### Installation (For Developers)
 
 ```bash
 # Clone the repository
@@ -73,14 +83,17 @@ cd devlama
 go build -o devlama.exe  # Windows
 # go build -o devlama     # macOS/Linux
 
-# Test it works
+# Test basic functionality (limited features work)
 ./devlama.exe --help
+./devlama.exe version
 ```
 
-### Setup Your Free AI Assistant (OLLAMA)
+### Setup Your Free AI Assistant (OLLAMA) - **EXPERIMENTAL**
+
+> **Note**: AI features are still in development and may not work properly.
 
 ```bash
-# 1. Install OLLAMA from https://ollama.ai (replaces Claude Code subscriptions)
+# 1. Install OLLAMA from https://ollama.ai (will replace Claude Code subscriptions)
 
 # 2. Start OLLAMA service (runs locally, no internet required)
 ollama serve
@@ -90,69 +103,72 @@ ollama pull llama2        # General purpose model
 ollama pull codellama     # Specialized for coding
 ollama pull mistral       # Fast and efficient
 
-# 4. Start using your free AI assistant
+# 4. Try the experimental AI features (may not work)
 ./devlama.exe ollama chat codellama
 ```
 
 ---
 
-## Usage Examples
+## Usage Examples (Planned Features)
 
-### Interactive Mode (Recommended)
+> **⚠️ Important**: Most of these features are **not implemented yet**. This shows what DevLama will be capable of when development is complete.
+
+### Interactive Mode (Planned)
 ```bash
-# Start the beautiful interactive interface
+# Start the beautiful interactive interface (basic version works)
 ./devlama.exe interactive
 
-# Try these commands in the text box:
-> hello DevLama
-> ollama chat llama2
-> code edit main.go
-> code generate function
-> banner
+# Try these commands in the text box (limited functionality):
+> hello DevLama        # ✅ Works
+> banner               # ✅ Works  
+> version              # ✅ Works
+> ollama chat llama2   # ⚠️ Experimental
+> code edit main.go    # ❌ Not implemented
+> code generate        # ❌ Not implemented
 > help
 ```
 
-### AI Commands
+### AI Commands (Experimental)
 ```bash
-# Chat with AI models
-./devlama.exe ollama chat llama2
-./devlama.exe ollama list
-./devlama.exe ollama pull codellama
+# Chat with AI models (may not work properly)
+./devlama.exe ollama chat llama2      # ⚠️ Experimental
+./devlama.exe ollama list             # ⚠️ Experimental  
+./devlama.exe ollama pull codellama   # ⚠️ Experimental
 
-# Generate text with AI
-./devlama.exe ollama generate llama2 "Write a Go function to reverse a string"
+# Generate text with AI (not fully implemented)
+./devlama.exe ollama generate llama2 "Write a Go function to reverse a string"  # ❌ May fail
 ```
 
-### 💻 **Code Manipulation**
+### Code Manipulation (Not Implemented)
 ```bash
-# Edit code files with AI assistance
-./devlama.exe code edit main.go
+# Edit code files with AI assistance (planned feature)
+./devlama.exe code edit main.go                              # ❌ Not working yet
 
-# Generate new code from templates
-./devlama.exe code generate function
-./devlama.exe code generate api
-./devlama.exe code generate test
+# Generate new code from templates (planned feature)
+./devlama.exe code generate function                         # ❌ Not working yet
+./devlama.exe code generate api                              # ❌ Not working yet
+./devlama.exe code generate test                             # ❌ Not working yet
 
-# Analyze and improve existing code
-./devlama.exe code analyze cmd/root.go
-./devlama.exe code refactor utils.go
+# Analyze and improve existing code (planned feature)
+./devlama.exe code analyze cmd/root.go                       # ❌ Not working yet
+./devlama.exe code refactor utils.go                         # ❌ Not working yet
 
-# Add features to existing files
-./devlama.exe code add "user authentication system"
+# Add features to existing files (planned feature)
+./devlama.exe code add "user authentication system"          # ❌ Not working yet
 ```
 
-### Utility Commands
+### Utility Commands (Working)
 ```bash
-# Open files and URLs
-./devlama.exe open .
-./devlama.exe open https://github.com
+# Open files and URLs (works)
+./devlama.exe open .                    # ✅ Works
+./devlama.exe open https://github.com   # ✅ Works
 
-# Show system information
-./devlama.exe version
-./devlama.exe
+# Show system information (works)
+./devlama.exe version                   # ✅ Works
+./devlama.exe                          # ✅ Works (shows banner)
 
-# Interactive help
-./devlama.exe help
+# Interactive help (works)
+./devlama.exe help                     # ✅ Works
 ```
 
 ---
@@ -278,33 +294,33 @@ exit                  - Leave interactive mode
 
 ---
 
-## Testing Guide
+## Testing Guide (For Developers)
 
 We've created a comprehensive testing guide! See **[TESTING.md](TESTING.md)** for:
 - Step-by-step testing instructions
 - OLLAMA setup verification
-- Feature validation checklist
+- Feature validation checklist (shows what works vs. what doesn't)
 - Troubleshooting common issues
 - Performance benchmarks
 
-### Quick Test
+### Quick Test (What Actually Works)
 ```bash
-# Test basic functionality
-./devlama.exe version
-./devlama.exe hello --name "Tester"
+# Test basic functionality (should work)
+./devlama.exe version                 # ✅ Works
+./devlama.exe hello --name "Tester"   # ✅ Works
 
-# Test AI integration (requires OLLAMA)
-./devlama.exe ollama list
+# Test AI integration (experimental, may fail)
+./devlama.exe ollama list             # ⚠️ May not work
 
-# Test interactive mode
-./devlama.exe interactive
+# Test interactive mode (basic version works)
+./devlama.exe interactive             # ✅ Basic functionality works
 ```
 
 ---
 
-## Contributing
+## Contributing (Help Wanted!)
 
-We welcome contributions! Here's how to get started:
+**DevLama needs your help!** Since this is an experimental project under heavy development, contributions are especially welcome. Here's how to get started:
 
 ### Development Setup
 ```bash
@@ -330,13 +346,22 @@ go build -o devlama.exe
 4. Update help text and documentation
 5. Add tests and examples
 
-### Contribution Areas
-- **AI Features**: New OLLAMA integrations
-- **Code Tools**: Additional programming languages
-- **UI/UX**: Enhanced interactive experiences  
-- **Documentation**: Tutorials and guides
-- **Testing**: Automated test suites
-- **DevOps**: CI/CD and deployment
+### High Priority Contribution Areas
+- **AI Integration**: Complete the OLLAMA implementation (partially working)
+- **Code Manipulation**: Implement the code editing and generation features
+- **Error Handling**: Improve error messages and edge case handling
+- **Testing**: Add comprehensive tests for existing functionality
+- **Documentation**: Update docs as features become functional
+- **Bug Fixes**: Many known issues need fixing
+
+### Current Development Status
+- ✅ **Basic CLI structure** - Working
+- ✅ **Interactive mode** - Basic version working
+- ✅ **File operations** - Working
+- ⚠️ **OLLAMA integration** - Partially implemented
+- ❌ **Code editing** - Not implemented
+- ❌ **AI code generation** - Not implemented
+- ❌ **Code analysis** - Not implemented
 
 ---
 
