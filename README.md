@@ -1,4 +1,4 @@
-# DevLama - AI-Powered Developer Productivity CLI
+# DevLama - a CLI coding tool that BELONGS TO YOU
 
 ```
 ██████╗ ███████╗██╗   ██╗██╗      █████╗ ███╗   ███╗ █████╗ 
@@ -9,48 +9,50 @@
 ╚═════╝ ╚══════╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝
 ```
 
-**The Ultimate AI-Powered Command-Line Tool for Developers**
+**A completely free, local alternative to Claude Code that works entirely on your machine**
 
-DevLama transforms your terminal into an intelligent development environment where you can chat with AI, manipulate code, and boost productivity—all through beautiful, interactive commands.
-
----
-
-## The Vision
-
-**DevLama bridges the gap between AI and your development workflow.** Instead of switching between your editor, browser, and AI tools, DevLama brings everything into your terminal:
-
-- **Chat with AI models** locally via OLLAMA
-- **Edit and generate code** with AI assistance  
-- **Beautiful interactive interface** with text input boxes
-- **Instant productivity** without leaving your terminal
-- **Extensible architecture** for custom workflows
-
-Think of it as **"Claude/ChatGPT for your terminal"** but with the power to actually modify your codebase.
+DevLama brings AI-powered coding assistance directly to your terminal—no subscriptions, no data sharing, no limits. The quality of results depends entirely on your prompting skills and the local AI models you choose. Your code never leaves your machine.
 
 ---
 
-## Core Features
+## Why Choose DevLama Over Claude Code?
 
-### AI Integration (OLLAMA-Powered)
-- **Interactive AI Chat**: Real-time conversations with local LLMs
-- **Code Analysis**: AI-powered code review and suggestions
+**DevLama gives you everything Claude Code offers, but completely free and under your control:**
+
+- **100% Free** - No monthly subscriptions or usage limits
+- **Completely Local** - Your code and data never leave your machine
+- **Privacy First** - No data collection, tracking, or cloud dependency
+- **Unlimited Usage** - Use as much as you want, whenever you want
+- **Customizable Models** - Choose and configure your own AI models
+- **Prompt-Dependent Quality** - Results improve with better prompting techniques
+
+**Key Difference:** While Claude Code requires paid subscriptions and sends your code to external servers, DevLama runs entirely locally using OLLAMA, giving you complete control and privacy.
+
+---
+
+## What You Get (All Free)
+
+### Everything Claude Code Does
+- **Interactive AI Chat**: Real-time conversations with powerful local models
+- **Code Analysis & Review**: AI-powered insights and suggestions
 - **Smart Code Generation**: Create functions, classes, APIs with natural language
-- **Bug Detection**: Automatic identification and fixing of code issues
-- **Documentation Generation**: AI-generated comments and docs
-
-### 💻 **Code Manipulation**
-- **AI Code Editor**: Modify files with intelligent suggestions
-- **Template Generation**: Pre-built templates for common patterns
-- **Refactoring Engine**: AI-driven code improvements
+- **Bug Detection & Fixing**: Automatic identification and resolution of issues
+- **Documentation Generation**: AI-generated comments and comprehensive docs
 - **Multi-Language Support**: Go, Python, JavaScript, Java, C++, and more
-- **Safe Operations**: Always confirm before making changes
 
-### Beautiful User Experience
-- **Colorful ASCII Art**: Professional branding and visual appeal
-- **Interactive Text Boxes**: Modern input interfaces with auto-completion
-- **Progress Indicators**: Real-time feedback for long operations
-- **Organized Help System**: Comprehensive documentation built-in
-- **Cross-Platform**: Works on Windows, macOS, and Linux
+### Plus Additional Advantages
+- **No Cost**: Zero subscription fees, completely free forever
+- **Local Processing**: All AI processing happens on your machine
+- **Unlimited Usage**: No daily limits, token restrictions, or usage caps
+- **Model Choice**: Use any OLLAMA-compatible model (llama2, codellama, mistral, etc.)
+- **Full Privacy**: Your code never transmitted anywhere
+- **Offline Capable**: Works without internet connection once models are downloaded
+
+### Quality Depends on Your Skills
+- **Prompt Engineering**: Better prompts = better results
+- **Model Selection**: Choose the right model for your specific tasks
+- **Context Provision**: More context in prompts leads to better outcomes
+- **Iterative Refinement**: Learn to refine and improve your requests
 
 ---
 
@@ -58,7 +60,7 @@ Think of it as **"Claude/ChatGPT for your terminal"** but with the power to actu
 
 ### Prerequisites
 - Go 1.24.5+ - [Download Go](https://golang.org/dl/)
-- OLLAMA - [Download OLLAMA](https://ollama.ai) for AI features
+- OLLAMA - [Download OLLAMA](https://ollama.ai) - This replaces Claude Code's cloud dependency
 
 ### Installation
 
@@ -75,19 +77,21 @@ go build -o devlama.exe  # Windows
 ./devlama.exe --help
 ```
 
-### Setup AI Features (OLLAMA)
+### Setup Your Free AI Assistant (OLLAMA)
 
 ```bash
-# 1. Install OLLAMA from https://ollama.ai
+# 1. Install OLLAMA from https://ollama.ai (replaces Claude Code subscriptions)
 
-# 2. Start OLLAMA service
+# 2. Start OLLAMA service (runs locally, no internet required)
 ollama serve
 
-# 3. Download your first AI model
-ollama pull llama2
+# 3. Download powerful AI models (one-time download, use forever)
+ollama pull llama2        # General purpose model
+ollama pull codellama     # Specialized for coding
+ollama pull mistral       # Fast and efficient
 
-# 4. Test AI integration
-./devlama.exe ollama chat llama2
+# 4. Start using your free AI assistant
+./devlama.exe ollama chat codellama
 ```
 
 ---
@@ -336,30 +340,41 @@ go build -o devlama.exe
 
 ---
 
-## Why DevLama?
+## DevLama vs Claude Code
 
-### The Problem
-Modern development involves constantly switching between:
-- Code editors for writing
-- Browsers for research  
-- AI tools for assistance
-- Terminals for commands
-- Documentation for references
+### The Problem with Claude Code
+- **Monthly subscriptions**: $20+ per month for full features
+- **Usage limits**: Token restrictions and daily caps
+- **Privacy concerns**: Your code is sent to external servers
+- **Internet dependency**: Requires constant connection
+- **No customization**: Locked into their models and interface
 
-### The Solution
-DevLama unifies these workflows into a single, intelligent command-line interface:
-- **AI-First**: Get help without leaving your terminal
-- **Code-Aware**: Understands your project structure
-- **Interactive**: Beautiful, modern CLI experience
-- **Extensible**: Easy to customize and extend
-- **Local**: Your code never leaves your machine
+### DevLama's Solution
+- **Completely free**: No subscriptions, no hidden costs
+- **Unlimited usage**: Use as much as you want
+- **Complete privacy**: Everything runs locally on your machine
+- **Works offline**: Once models are downloaded, no internet needed
+- **Full control**: Choose your models, customize everything
 
-### The Result
-- **10x faster** development workflow
-- **Smarter** code with AI assistance  
-- **More enjoyable** terminal experience
-- **Privacy-focused** with local AI models
-- **Infinitely extensible** for your needs
+### Real-World Comparison
+| Feature | Claude Code | DevLama |
+|---------|-------------|---------|
+| **Cost** | $20+/month | Free |
+| **Privacy** | Code sent to servers | 100% local |
+| **Usage Limits** | Yes | None |
+| **Offline Mode** | No | Yes |
+| **Model Choice** | Fixed | Any OLLAMA model |
+| **Customization** | Limited | Complete control |
+| **Data Control** | External | Your machine only |
+
+### The Trade-off: Quality Depends on You
+Unlike Claude Code's polished, consistent experience, DevLama's quality depends on:
+- **Your prompting skills**: Learn to write effective prompts
+- **Model selection**: Choose appropriate models for specific tasks
+- **Context provision**: Give the AI enough information to work with
+- **Iterative improvement**: Refine your approach over time
+
+**Bottom Line**: DevLama gives you the same capabilities as Claude Code but free, private, and under your complete control.
 
 ---
 
@@ -404,4 +419,4 @@ Built with love using:
 - [PromptUI](https://github.com/manifoldco/promptui) - Interactive CLI components
 - [Go](https://golang.org) - Fast, reliable systems programming
 
-**DevLama: Where AI meets Developer Experience** 
+**DevLama: Free AI coding assistance that respects your privacy and puts you in control** 
