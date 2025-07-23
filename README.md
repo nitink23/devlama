@@ -382,7 +382,7 @@ go build -o devlama.exe
 - **Full control**: Choose your models, customize everything
 
 ### Real-World Comparison
-| Feature | Claude Code | DevLama |
+| Feature | other services | DevLama |
 |---------|-------------|---------|
 | **Cost** | $20+/month | Free |
 | **Privacy** | Code sent to servers | 100% local |
